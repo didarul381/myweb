@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {}
+
+/*Main code start*/
+.wrapper-full {
+    width: 100%;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+/*hadder code start*/
+.header-full {
+    background-color: dimgrey;
+}
+
+.header {
+    height: 40px;
+    line-height: 40px;
+
+
+}
+
+.header p {
+    float: left;
+    padding-right: 742px;
+}
+
+.header ul {
+    overflow: hidden;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li a {
+    color: darkgray;
+
+}
+
+.header ul li a:hover {
+    color: red;
+    transform: scale(1.5);
+
+}
+
+/*navr code start*/
+.navr-full {
+    background-color: lightskyblue;
+
+
+}
+
+.navr {
+    height: 80px;
+    line-height: 80px;
+}
+
+.navr ul {
+    overflow: hidden;
+}
+
+.navr > ul > li {
+    float: left;
+    margin-right: 5px;
+}
+
+.navr > ul > li > a {
+    color: black;
+    display: block;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    transition: all linear 0.5s;
+}
+
+.navr > ul > li > a:hover {
+    color: white;
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/*Drop down menu*/
+.navr > ul > li > ul {
+    position: absolute;
+    display: none;
+}
+
+.navr > ul > li:hover > ul {
+    display: block;
+    background-color: aqua;
+}
+
+.navr > ul > li > ul > li {}
+
+.navr > ul > li > ul > li > a {
+    display: block;
+    padding: 3px 120px 3px 30px;
+    line-height: 40px;
+    border-bottom: 1px solid blue;
+    transition: all linear 0.5s;
+}
+
+.navr > ul > li > ul > li > a:hover {
+    color: aquamarine;
+    background-color: red;
+
+}
+
+.navr > ul > li > ul > li:first-child > a {
+    border-top: 1px solid red;
+}
+
+.navr > ul > li > ul > li:last-child > a {
+    border-bottom: 0px;
+}
+
+/*banner code start*/
+
+.banner-full  {
+   background-image: url(../images/pro2.jpg);
+   height: 650px;*/
+    background-repeat: none;
+    background-size: cover;
+    animation: slide 50s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url(../images/pro2.jpg);
+        height:625px;
+        background-repeat: none;
+        background-size: cover;
+
+    }
+
+
+    /* 50% {
+        background-image: url(../images/sky.jpg);height: 600px;
+        background-repeat: none;
+        background-size: cover;
+        background-size: 100%;*/
+
+
+}
+}
+
+.banner {
+    height:450px;
+}
+
+/*contant code start*/
+.content-full {}
+
+.content {
+    padding: 10px 0px;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    color: drakblue;
+    border-bottom: 2px solid red;
+}
+
+.content p {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/*contant code end*/
+/*footer code start*/
+.footer-full {
+    background-color: darkgray;
+}
+
+.footer {
+    height: 120px;
+    /*line-height:80px;*/
+}
+
+.footer p {
+    float: left;
+    padding-top: 50px;
+}
+
+
+
+.footer .right {
+    padding-left: 650px;
+    padding-top: 50px;
+
+
+}
+
+/*contant code end*/
